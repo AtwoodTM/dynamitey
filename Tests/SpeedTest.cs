@@ -44,7 +44,7 @@ namespace Dynamitey.Tests
 			Console.WriteLine("Impromptu: " + elapsed.Item1);
 			Console.WriteLine("Refelection: " + elapsed.Item2);
 			Console.WriteLine("Impromptu VS Reflection: {0}", TimeIt.RelativeSpeed(elapsed));
-			Assert.Less(elapsed.Item1, elapsed.Item2);
+			Assert.That(elapsed.Item1, Is.LessThan(elapsed.Item2));
 		}
 
 		[Test]
@@ -67,7 +67,7 @@ namespace Dynamitey.Tests
 			Console.WriteLine("Impromptu: " + elapsed.Item1);
 			Console.WriteLine("Refelection: " + elapsed.Item2);
 			Console.WriteLine("Impromptu VS Reflection: {0}", TimeIt.RelativeSpeed(elapsed));
-			Assert.Less(elapsed.Item1, elapsed.Item2);
+			Assert.That(elapsed.Item1, Is.LessThan(elapsed.Item2));
 		}
 
 		[Test]
@@ -84,7 +84,7 @@ namespace Dynamitey.Tests
 			Console.WriteLine("Impromptu: " + elapsed.Item1);
 			Console.WriteLine("Refelection: " + elapsed.Item2);
 			Console.WriteLine("Impromptu VS Reflection: {0}", TimeIt.RelativeSpeed(elapsed));
-			Assert.Less(elapsed.Item1, elapsed.Item2);
+			Assert.That(elapsed.Item1, Is.LessThan(elapsed.Item2));
 		}
 
 		[Test]
@@ -102,7 +102,7 @@ namespace Dynamitey.Tests
 			Console.WriteLine("Impromptu: " + elapsed.Item1);
 			Console.WriteLine("Refelection: " + elapsed.Item2);
 			Console.WriteLine("Impromptu VS Reflection: {0}", TimeIt.RelativeSpeed(elapsed));
-			Assert.Less(elapsed.Item1, elapsed.Item2);
+			Assert.That(elapsed.Item1, Is.LessThan(elapsed.Item2));
 		}
 
 		[Test]
@@ -126,7 +126,7 @@ namespace Dynamitey.Tests
 			Console.WriteLine("Impromptu VS Reflection: {0:0.0} x slower", (double)elapsed.Item1.Ticks / elapsed.Item2.Ticks);
 
 			Assert.Ignore("I don't think this is beatable at the moment");
-			Assert.Less(elapsed.Item1, elapsed.Item2);
+			Assert.That(elapsed.Item1, Is.LessThan(elapsed.Item2));
 		}
 
 		[Test]
@@ -151,7 +151,7 @@ namespace Dynamitey.Tests
 			Console.WriteLine("Impromptu VS Reflection: {0:0.0} x slower", (double)elapsed.Item1.Ticks / elapsed.Item2.Ticks);
 
 			Assert.Ignore("I don't think this is beatable at the moment");
-			Assert.Less(elapsed.Item1, elapsed.Item2);
+			Assert.That(elapsed.Item1, Is.LessThan(elapsed.Item2));
 		}
 
 		[Test]
@@ -168,7 +168,7 @@ namespace Dynamitey.Tests
 			Console.WriteLine("Impromptu: " + elapsed.Item1);
 			Console.WriteLine("Refelection: " + elapsed.Item2);
 			Console.WriteLine("Impromptu VS Reflection: {0}", TimeIt.RelativeSpeed(elapsed));
-			Assert.Less(elapsed.Item1, elapsed.Item2);
+			Assert.That(elapsed.Item1, Is.LessThan(elapsed.Item2));
 		}
 
 		[Test]
@@ -186,7 +186,7 @@ namespace Dynamitey.Tests
 			Console.WriteLine("Impromptu: " + elapsed.Item1);
 			Console.WriteLine("Refelection: " + elapsed.Item2);
 			Console.WriteLine("Impromptu VS Reflection: {0}", TimeIt.RelativeSpeed(elapsed));
-			Assert.Less(elapsed.Item1, elapsed.Item2);
+			Assert.That(elapsed.Item1, Is.LessThan(elapsed.Item2));
 		}
 
 		[Test]
@@ -210,7 +210,7 @@ namespace Dynamitey.Tests
 			Console.WriteLine("Impromptu: " + elapsed.Item1);
 			Console.WriteLine("Refelection: " + elapsed.Item2);
 			Console.WriteLine("Impromptu VS Reflection: {0}", TimeIt.RelativeSpeed(elapsed));
-			Assert.Less(elapsed.Item1, elapsed.Item2);
+			Assert.That(elapsed.Item1, Is.LessThan(elapsed.Item2));
 		}
 
 		[Test]
@@ -231,7 +231,7 @@ namespace Dynamitey.Tests
 			Console.WriteLine("Impromptu: " + elapsed.Item1);
 			Console.WriteLine("Refelection: " + elapsed.Item2);
 			Console.WriteLine("Impromptu VS Reflection: {0}", TimeIt.RelativeSpeed(elapsed));
-			Assert.Less(elapsed.Item1, elapsed.Item2);
+			Assert.That(elapsed.Item1, Is.LessThan(elapsed.Item2));
 		}
 
 		[Test]
@@ -255,7 +255,7 @@ namespace Dynamitey.Tests
 			Console.WriteLine("Impromptu: " + elapsed.Item1);
 			Console.WriteLine("Refelection: " + elapsed.Item2);
 			Console.WriteLine("Impromptu VS Reflection: {0}", TimeIt.RelativeSpeed(elapsed));
-			Assert.Less(elapsed.Item1, elapsed.Item2);
+			Assert.That(elapsed.Item1, Is.LessThan(elapsed.Item2));
 		}
 
 		[Test]
@@ -281,7 +281,7 @@ namespace Dynamitey.Tests
 			Console.WriteLine("Impromptu: " + elapsed.Item1);
 			Console.WriteLine("Refelection: " + elapsed.Item2);
 			Console.WriteLine("Impromptu VS Reflection: {0}", TimeIt.RelativeSpeed(elapsed));
-			Assert.Less(elapsed.Item1, elapsed.Item2);
+			Assert.That(elapsed.Item1, Is.LessThan(elapsed.Item2));
 		}
 
 		[Test]
@@ -305,7 +305,7 @@ namespace Dynamitey.Tests
 			Console.WriteLine("Impromptu: " + elapsed.Item1);
 			Console.WriteLine("Refelection: " + elapsed.Item2);
 			Console.WriteLine("Impromptu VS Reflection: {0}", TimeIt.RelativeSpeed(elapsed));
-			Assert.Less(elapsed.Item1, elapsed.Item2);
+			Assert.That(elapsed.Item1, Is.LessThan(elapsed.Item2));
 		}
 
 		[Test]
@@ -329,7 +329,7 @@ namespace Dynamitey.Tests
 			Console.WriteLine("Impromptu: " + elapsed.Item1);
 			Console.WriteLine("Refelection: " + elapsed.Item2);
 			Console.WriteLine("Impromptu VS Reflection: {0}", TimeIt.RelativeSpeed(elapsed));
-			Assert.Less(elapsed.Item1, elapsed.Item2);
+			Assert.That(elapsed.Item1, Is.LessThan(elapsed.Item2));
 		}
 
 		[Test]
@@ -353,7 +353,7 @@ namespace Dynamitey.Tests
 			Console.WriteLine("Impromptu: " + elapsed.Item1);
 			Console.WriteLine("Refelection: " + elapsed.Item2);
 			Console.WriteLine("Impromptu VS Reflection: {0}", TimeIt.RelativeSpeed(elapsed));
-			Assert.Less(elapsed.Item1, elapsed.Item2);
+			Assert.That(elapsed.Item1, Is.LessThan(elapsed.Item2));
 		}
 
 		[Test]
@@ -379,7 +379,7 @@ namespace Dynamitey.Tests
 			Console.WriteLine("Impromptu: " + elapsed.Item1);
 			Console.WriteLine("Refelection: " + elapsed.Item2);
 			Console.WriteLine("Impromptu VS Reflection: {0}", TimeIt.RelativeSpeed(elapsed));
-			Assert.Less(elapsed.Item1, elapsed.Item2);
+			Assert.That(elapsed.Item1, Is.LessThan(elapsed.Item2));
 		}
 
 		[Test]
@@ -409,7 +409,7 @@ namespace Dynamitey.Tests
 			Console.WriteLine("Impromptu: " + elapsed.Item1);
 			Console.WriteLine("Refelection: " + elapsed.Item2);
 			Console.WriteLine("Impromptu VS Reflection: {0}", TimeIt.RelativeSpeed(elapsed));
-			Assert.Less(elapsed.Item1, elapsed.Item2);
+			Assert.That(elapsed.Item1, Is.LessThan(elapsed.Item2));
 		}
 
 		[Test]
@@ -437,7 +437,7 @@ namespace Dynamitey.Tests
 			Console.WriteLine("Impromptu: " + elapsed.Item1);
 			Console.WriteLine("Refelection: " + elapsed.Item2);
 			Console.WriteLine("Impromptu VS Reflection: {0}", TimeIt.RelativeSpeed(elapsed));
-			Assert.Less(elapsed.Item1, elapsed.Item2);
+			Assert.That(elapsed.Item1, Is.LessThan(elapsed.Item2));
 		}
 
 		[Test]
@@ -460,7 +460,7 @@ namespace Dynamitey.Tests
 			Console.WriteLine("Impromptu: " + elapsed.Item1);
 			Console.WriteLine("Refelection: " + elapsed.Item2);
 			Console.WriteLine("Impromptu VS Reflection: {0}", TimeIt.RelativeSpeed(elapsed));
-			Assert.Less(elapsed.Item1, elapsed.Item2);
+			Assert.That(elapsed.Item1, Is.LessThan(elapsed.Item2));
 		}
 
 		[Test]
@@ -484,7 +484,7 @@ namespace Dynamitey.Tests
 			Console.WriteLine("Impromptu: " + elapsed.Item1);
 			Console.WriteLine("Refelection: " + elapsed.Item2);
 			Console.WriteLine("Impromptu VS Reflection: {0}", TimeIt.RelativeSpeed(elapsed));
-			Assert.Less(elapsed.Item1, elapsed.Item2);
+			Assert.That(elapsed.Item1, Is.LessThan(elapsed.Item2));
 		}
 
 		[Test]
@@ -504,7 +504,7 @@ namespace Dynamitey.Tests
 			Console.WriteLine("Impromptu: " + elapsed.Item1);
 			Console.WriteLine("Refelection: " + elapsed.Item2);
 			Console.WriteLine("Impromptu VS Reflection: {0}", TimeIt.RelativeSpeed(elapsed));
-			Assert.Less(elapsed.Item1, elapsed.Item2);
+			Assert.That(elapsed.Item1, Is.LessThan(elapsed.Item2));
 		}
 
 		[Test]
@@ -523,7 +523,7 @@ namespace Dynamitey.Tests
 			Console.WriteLine("Impromptu: " + elapsed.Item1);
 			Console.WriteLine("Refelection: " + elapsed.Item2);
 			Console.WriteLine("Impromptu VS Reflection: {0}", TimeIt.RelativeSpeed(elapsed));
-			Assert.Less(elapsed.Item1, elapsed.Item2);
+			Assert.That(elapsed.Item1, Is.LessThan(elapsed.Item2));
 		}
 
 		[Test]
@@ -546,7 +546,7 @@ namespace Dynamitey.Tests
 			Console.WriteLine("Impromptu: " + elapsed.Item1);
 			Console.WriteLine("Refelection: " + elapsed.Item2);
 			Console.WriteLine("Impromptu VS Reflection: {0}", TimeIt.RelativeSpeed(elapsed));
-			Assert.Less(elapsed.Item1, elapsed.Item2);
+			Assert.That(elapsed.Item1, Is.LessThan(elapsed.Item2));
 		}
 
 		[Test]
@@ -568,7 +568,7 @@ namespace Dynamitey.Tests
 			Console.WriteLine("Impromptu: " + elapsed.Item1);
 			Console.WriteLine("Refelection: " + elapsed.Item2);
 			Console.WriteLine("Impromptu VS Reflection: {0}", TimeIt.RelativeSpeed(elapsed));
-			Assert.Less(elapsed.Item1, elapsed.Item2);
+			Assert.That(elapsed.Item1, Is.LessThan(elapsed.Item2));
 		}
 
 		[Test]
@@ -587,7 +587,7 @@ namespace Dynamitey.Tests
 			Console.WriteLine("Impromptu: " + elapsed.Item1);
 			Console.WriteLine("Refelection: " + elapsed.Item2);
 			Console.WriteLine("Impromptu VS Reflection: {0}", TimeIt.RelativeSpeed(elapsed));
-			Assert.Less(elapsed.Item1, elapsed.Item2);
+			Assert.That(elapsed.Item1, Is.LessThan(elapsed.Item2));
 		}
 
 		[Test]
@@ -610,7 +610,7 @@ namespace Dynamitey.Tests
 			Console.WriteLine("Impromptu: " + elapsed.Item1);
 			Console.WriteLine("Refelection: " + elapsed.Item2);
 			Console.WriteLine("Impromptu VS Reflection: {0}", TimeIt.RelativeSpeed(elapsed));
-			Assert.Less(elapsed.Item1, elapsed.Item2);
+			Assert.That(elapsed.Item1, Is.LessThan(elapsed.Item2));
 		}
 
 		[Test]
@@ -626,7 +626,7 @@ namespace Dynamitey.Tests
 			Console.WriteLine("Impromptu: " + elapsed.Item1);
 			Console.WriteLine("Refelection: " + elapsed.Item2);
 			Console.WriteLine("Impromptu VS Reflection: {0}", TimeIt.RelativeSpeed(elapsed));
-			Assert.Less(elapsed.Item1, elapsed.Item2);
+			Assert.That(elapsed.Item1, Is.LessThan(elapsed.Item2));
 		}
 
 		[Test]
@@ -642,7 +642,7 @@ namespace Dynamitey.Tests
 			Console.WriteLine("Impromptu: " + elapsed.Item1);
 			Console.WriteLine("Refelection: " + elapsed.Item2);
 			Console.WriteLine("Impromptu VS Reflection: {0}", TimeIt.RelativeSpeed(elapsed));
-			Assert.Less(elapsed.Item1, elapsed.Item2);
+			Assert.That(elapsed.Item1, Is.LessThan(elapsed.Item2));
 		}
 
 		[Test]
@@ -659,7 +659,7 @@ namespace Dynamitey.Tests
 			Console.WriteLine("Impromptu: " + elapsed.Item1);
 			Console.WriteLine("FSharp Refelection: " + elapsed.Item2);
 			Console.WriteLine("Impromptu VS FSharp Reflection: {0}", TimeIt.RelativeSpeed(elapsed));
-			Assert.Less(elapsed.Item1, elapsed.Item2);
+			Assert.That(elapsed.Item1, Is.LessThan(elapsed.Item2));
 		}
 
 		[Test]
@@ -676,7 +676,7 @@ namespace Dynamitey.Tests
 			Console.WriteLine("Impromptu: " + elapsed.Item1);
 			Console.WriteLine("FSharp Refelection: " + elapsed.Item2);
 			Console.WriteLine("Impromptu VS FSharp Reflection: {0}", TimeIt.RelativeSpeed(elapsed));
-			Assert.Less(elapsed.Item1, elapsed.Item2);
+			Assert.That(elapsed.Item1, Is.LessThan(elapsed.Item2));
 		}
 
 		[Test]
@@ -693,7 +693,7 @@ namespace Dynamitey.Tests
 			Console.WriteLine("Impromptu: " + elapsed.Item1);
 			Console.WriteLine("FSharp Refelection: " + elapsed.Item2);
 			Console.WriteLine("Impromptu VS FSharp Reflection: {0}", TimeIt.RelativeSpeed(elapsed));
-			Assert.Less(elapsed.Item1, elapsed.Item2);
+			Assert.That(elapsed.Item1, Is.LessThan(elapsed.Item2));
 		}
 
 		[Test]
@@ -715,7 +715,7 @@ namespace Dynamitey.Tests
 			Console.WriteLine("Impromptu: " + elapsed.Item1);
 			Console.WriteLine("FSharp Refelection: " + elapsed.Item2);
 			Console.WriteLine("Impromptu VS FSharp Reflection: {0}", TimeIt.RelativeSpeed(elapsed));
-			Assert.Less(elapsed.Item1, elapsed.Item2);
+			Assert.That(elapsed.Item1, Is.LessThan(elapsed.Item2));
 		}
 	}
 }
