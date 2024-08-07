@@ -7,48 +7,47 @@
 		public void DynamicCreateTypedTuple()
 		{
 			object tup = Tupler.Create(1, "2", "3", 4);
-
 			var tup2 = Tuple.Create(1, "2", "3", 4);
 
-			Assert.That(tup, Is.TypeOf(tup2.GetType()));
-
-			Assert.That(tup, Is.EqualTo(tup2));
+			Assert.Multiple(() =>
+			{
+				Assert.That(tup, Is.TypeOf(tup2.GetType()));
+				Assert.That(tup, Is.EqualTo(tup2));
+			});
 		}
 
 		[Test]
 		public void DynamicCreateTypedTuple8()
 		{
-			object tup = Tupler.Create(1, "2", "3", 4,
-					5, 6, 7, "8");
-
+			object tup = Tupler.Create(1, "2", "3", 4, 5, 6, 7, "8");
 			var tup2 = Tuple.Create(1, "2", "3", 4, 5, 6, 7, "8");
 
-			Assert.That(tup, Is.TypeOf(tup2.GetType()));
-
-			Assert.That(tup, Is.EqualTo(tup2));
+			Assert.Multiple(() =>
+			{
+				Assert.That(tup, Is.TypeOf(tup2.GetType()));
+				Assert.That(tup, Is.EqualTo(tup2));
+			});
 		}
 
 		[Test]
 		public void DynamicCreateLongTypedTuple()
 		{
-			object tup = Tupler.Create(1, "2", "3", 4,
-					5, 6, 7, "8", "9", 10, "11", 12);
-
+			object tup = Tupler.Create(1, "2", "3", 4, 5, 6, 7, "8", "9", 10, "11", 12);
 			var tup2 = new Tuple<int, string, string, int, int, int, int, Tuple<string, string, int, string, int>>(
-				1, "2", "3", 4,
-				5, 6, 7, Tuple.Create("8", "9", 10, "11", 12)
-				);
+				1, "2", "3", 4, 5, 6, 7, Tuple.Create("8", "9", 10, "11", 12)
+			);
 
-			Assert.That(tup, Is.TypeOf(tup2.GetType()));
-
-			Assert.That(tup, Is.EqualTo(tup2));
+			Assert.Multiple(() =>
+			{
+				Assert.That(tup, Is.TypeOf(tup2.GetType()));
+				Assert.That(tup, Is.EqualTo(tup2));
+			});
 		}
 
 		[Test]
 		public void DynamicTupleSize()
 		{
 			var tup = Tuple.Create(1, 2, 3, 4, 5);
-
 			Assert.That((object)Tupler.Size(tup), Is.EqualTo(5));
 		}
 
@@ -56,7 +55,6 @@
 		public void DynamicTupleSize8()
 		{
 			var tup = Tuple.Create(1, 2, 3, 4, 5, 6, 7, 8);
-
 			Assert.That((object)Tupler.Size(tup), Is.EqualTo(8));
 		}
 
@@ -64,7 +62,6 @@
 		public void DynamicTupleSize20()
 		{
 			var tup = Tupler.Create(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20);
-
 			Assert.That((object)Tupler.Size(tup), Is.EqualTo(20));
 		}
 
@@ -97,8 +94,11 @@
 		{
 			var exp = Enumerable.Range(1, 5).ToList();
 			var tup = exp.ToTuple();
-			Assert.That((object)Tupler.IsTuple(tup), Is.True);
-			Assert.That((object)Tupler.ToList(tup), Is.EqualTo(exp));
+			Assert.Multiple(() =>
+			{
+				Assert.That((object)Tupler.IsTuple(tup), Is.True);
+				Assert.That((object)Tupler.ToList(tup), Is.EqualTo(exp));
+			});
 		}
 
 		[Test]
@@ -106,8 +106,11 @@
 		{
 			var exp = Enumerable.Range(1, 8).ToList();
 			var tup = exp.ToTuple();
-			Assert.That((object)Tupler.IsTuple(tup), Is.True);
-			Assert.That((object)Tupler.ToList(tup), Is.EqualTo(exp));
+			Assert.Multiple(() =>
+			{
+				Assert.That((object)Tupler.IsTuple(tup), Is.True);
+				Assert.That((object)Tupler.ToList(tup), Is.EqualTo(exp));
+			});
 		}
 
 		[Test]
@@ -115,8 +118,11 @@
 		{
 			var exp = Enumerable.Range(1, 20).ToList();
 			var tup = exp.ToTuple();
-			Assert.That((object)Tupler.IsTuple(tup), Is.True);
-			Assert.That((object)Tupler.ToList(tup), Is.EqualTo(exp));
+			Assert.Multiple(() =>
+			{
+				Assert.That((object)Tupler.IsTuple(tup), Is.True);
+				Assert.That((object)Tupler.ToList(tup), Is.EqualTo(exp));
+			});
 		}
 
 		[Test]
